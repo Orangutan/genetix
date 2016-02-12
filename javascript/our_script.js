@@ -62,12 +62,12 @@ window.onload = function() {
 
     // drawing top
     _.each(attack.genome, function(row, i) {
-      vPos = cellSize * i
+      var vPos = cellSize * i
       _.each(setRow(row, vPos, cellSize), function(cell){ creatureMatrix.push(cell) } );
     })
     //drawing bottom
     _.each(defence.genome.reverse(), function(row, i) {
-      vPos = (cellSize*4) + (cellSize * i)
+      var vPos = (cellSize*4) + (cellSize * i)
       _.each(setRow(row.reverse(), vPos, cellSize), function(cell){ creatureMatrix.push(cell) } );
     })
     creatureMatrix.translate(100,100)
