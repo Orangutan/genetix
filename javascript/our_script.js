@@ -99,6 +99,6 @@ window.onload = function() {
     
   };
   
-  newCreature(whale, cuckoo, whale);
+  newCreature(cuckoo, monkey, whale);
 
 }
