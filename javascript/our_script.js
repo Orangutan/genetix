@@ -58,12 +58,12 @@ window.onload = function() {
     var stamina = body.stamina;
     var cellSize = 6+(size*4);
 
-    var creatureMatrix = paper.set()
+    var creatureMatrix = paper.set();
 
     // drawing top
     _.each(attack.genome, function(row, i) {
       vPos = cellSize * i
-      _.each(row = setRow(row, vPos, cellSize), function(cell){ creatureMatrix.push(cell) } );
+      _.each(setRow(row, vPos, cellSize), function(cell){ creatureMatrix.push(cell) } );
     })
     //drawing bottom
     _.each(defence.genome.reverse(), function(row, i) {
